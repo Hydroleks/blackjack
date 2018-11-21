@@ -1,30 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="EntryPoint">
+      <UniqueIdentifier>{e4ee2187-baa3-4822-bbba-73ef79f2e16e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Game">
+      <UniqueIdentifier>{0c8ecce3-d6d0-40c7-a6f5-b135a61c326a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Game\Items">
+      <UniqueIdentifier>{b97ca220-4b39-47ee-896c-11698aa3d631}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\Characters">
+      <UniqueIdentifier>{9022e625-25e3-467e-83f7-511618003ae1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BendersBlackjack.cpp">
+      <Filter>EntryPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Items\PhysicalItem.cpp">
+      <Filter>Game\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Items\Card.cpp">
+      <Filter>Game\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Characters\Character.cpp">
+      <Filter>Game\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Characters\MainCharacter.cpp">
+      <Filter>Game\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Characters\NPC.cpp">
+      <Filter>Game\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\CardFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\CharacterFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Characters\Dealer.cpp">
+      <Filter>Game\Characters</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+      <Filter>Game</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BendersBlackjack.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="Game\Items\PhysicalItem.h">
+      <Filter>Game\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Items\Card.h">
+      <Filter>Game\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Characters\Character.h">
+      <Filter>Game\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Characters\MainCharactar.h">
+      <Filter>Game\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Characters\NPC.h">
+      <Filter>Game\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameDefines.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\CardFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\CharacterFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Characters\Dealer.h">
+      <Filter>Game\Characters</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

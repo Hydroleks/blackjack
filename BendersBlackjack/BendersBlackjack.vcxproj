@@ -91,6 +91,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)BendersBlackjack\Game;$(SolutionDir)BendersBlackjack\Game\Items;$(SolutionDir)BendersBlackjack\Game\Characters;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,10 +152,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Game\CardFactory.h" />
+    <ClInclude Include="Game\CharacterFactory.h" />
+    <ClInclude Include="Game\Characters\Character.h" />
+    <ClInclude Include="Game\Characters\Dealer.h" />
+    <ClInclude Include="Game\Characters\MainCharactar.h" />
+    <ClInclude Include="Game\Characters\NPC.h" />
+    <ClInclude Include="Game\GameDefines.h" />
+    <ClInclude Include="Game\Items\Card.h" />
+    <ClInclude Include="Game\Items\PhysicalItem.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BendersBlackjack.cpp" />
+    <ClCompile Include="Game\CardFactory.cpp" />
+    <ClCompile Include="Game\CharacterFactory.cpp" />
+    <ClCompile Include="Game\Characters\Character.cpp" />
+    <ClCompile Include="Game\Characters\Dealer.cpp" />
+    <ClCompile Include="Game\Characters\MainCharacter.cpp" />
+    <ClCompile Include="Game\Characters\NPC.cpp" />
+    <ClCompile Include="Game\Items\Card.cpp" />
+    <ClCompile Include="Game\Items\PhysicalItem.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
